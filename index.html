@@ -12,52 +12,75 @@
 <body>
     <header class="">
         <div class="header-cont mt-10 max-w-6xl mx-auto">
-            <nav class="navbar bg-base-100">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+            <nav class="flex items-center md:items-center md:justify-between md:flex-row flex-col">
+                <div class="logo-cont">
+                    Bike Dekho
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <details>
-                                <summary>Parent</summary>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a>Item 3</a></li>
+                <div class="nav-cont flex gap-10 items-center md:items-center">
+                    <ul class="flex gap-10">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
-                <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <button class="btn border-none text-white bg-orange-700">Login</button>
                 </div>
             </nav>
         </div>
     </header>
+    <section class="banner max-w-6xl mx-auto">
+        <div class="carousel w-full my-12">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="carousel-cont flex md:flex-row flex-col justify-center items-center p-10 rounded-md  bg-orange-200">
+                <div class="slider-cont md:w-[50%] p-6">
+                    <h1 class="text-6xl font-bold text-black">Ride-on R15 V4 with Smile</h1>
+                    <p class="font-light">Amet minim mollit non deserunt ullamco 
+                        est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                    <button class="btn text-white bg-orange-700 mt-3 border-none">Purchase</button>
+                </div>
+                <div class="slider-img md:w-[50%] p-6">
+                    <img class="w-[100%]" src="images/slider/bike1.png" alt="">
+                </div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="max-w-6xl mx-auto text-center mt-12">
+        <div class="content">
+            <h1 class="font-semibold text-5xl">Fetured Bikes In This Year</h1>
+            <p class="text-[#E76F51] text-[14px]">Best bike collection</p>
+        </div>
+        <div class="flex md:justify-around flex-col md:flex-row p-4 md:p-8 gap-5">
+            <img src="images/others/latest1.png" alt="">
+            <img src="images/others/latest2.png" alt="">
+            <img src="images/others/latest3.png" alt="">
+        </div>
+    </section>
 </body>
 
 </html>
